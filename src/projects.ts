@@ -14,3 +14,24 @@ interface IProject {
     created_at: string;
 }
 
+const project: IProject[] = [
+    {
+        id: 0,
+        title: 'Gottfrids canvas shop',
+        img: {
+            src: '/assets/cartoon-quiz-portfolio.png',
+            alt: 'quiz',
+            width: 1466,
+            height: 817
+        },
+        description: `This project was developed as a school project at Medieinstitutet.
+        The aim was to create a webshop for donuts or another product of choice. I chose to create a webshop for Canvases I've created in photoshop a few years ago to make it a little bit more personal.
+        Troughtout this project I focused on understanding the basics of Java Script and I'm excited to redo this projects in a few years. This is my first project so I consider it to be the most important one. I hope you enjoy.`,
+        tech: ['HTML', 'Javascript', 'Scss', 'Prettier'],
+        demo: 'https://github.com/mikaelakihl/mi-js-intro-assignment1-webshop',
+        github: 'https://github.com/mikaelakihl/mi-js-intro-assignment1-webshop',
+        created_at: ""
+    }
+];
+
+export default project;
