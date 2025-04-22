@@ -19,7 +19,7 @@ const project: IProject[] = [
         id: 0,
         title: 'Gottfrids canvas shop',
         img: {
-            src: '/assets/cartoon-quiz-portfolio.png',
+            src: '/assets/gottfrids-canvas-shop-portfolio.png',
             alt: 'quiz',
             width: 1466,
             height: 817
@@ -31,7 +31,25 @@ const project: IProject[] = [
         demo: 'https://github.com/mikaelakihl/mi-js-intro-assignment1-webshop',
         github: 'https://github.com/mikaelakihl/mi-js-intro-assignment1-webshop',
         created_at: ""
-    }
+    },
+    {
+        id: 1,
+        title: 'Cartoon quiz',
+        img: {
+            src: '/assets/cartoon-quiz-portfolio.png',
+            alt: 'quiz',
+            width: 1718,
+            height: 1000
+        },
+        description: `This project was developed as a school group-project at Medieinstitutet.
+        The aim was to create a quiz in theme of choice. We chose to create a quiz about cartoons because it felt fun to play with happy colors.
+        Troughout this project we focused on learning how to work as a group, both individually and pair coding. I hope you enjoy.`,
+        tech: ['HTML', 'Javascript', 'Typescript', 'Scss', 'Prettier', 'EsLint', 'Vite'],
+        demo: 'https://github.com/mikaelakihl/mi-js-intro-assignment2-cartoonquiz',
+        github: 'https://github.com/mikaelakihl/mi-js-intro-assignment2-cartoonquiz',
+        created_at: ""
+    },
+
 ];
 
 export default project;
