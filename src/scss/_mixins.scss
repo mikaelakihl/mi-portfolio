@@ -1,0 +1,9 @@
+@use 'variables';
+
+@mixin h2-style {
+    font-size: 3rem;
+    text-align: center;
+    color: variables.$fourth-color;
+    // padding-top: 1rem;
+
+ }
