@@ -194,6 +194,54 @@ img{
     }
 }
 
+footer{
+
+    height: 100%;
+    width: 100%;
+    background-color: variables.$white-color;
+    padding: 1rem;
+
+    .footer-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4{
+            margin-top: 0;
+        }
+
+        h3{
+            margin-bottom: 0;
+        }
+
+        .profile-picture{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-container{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+
+        .contact-social-media-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0;
+            gap: 1rem;
+        }
+
+
+    }
 
 
 
