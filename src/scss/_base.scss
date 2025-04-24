@@ -60,7 +60,20 @@ body{
                 max-width: 100ch;
             }
     
-        
+            nav{
+                height: 100%;
+                width: 100%;
+                
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    list-style: none;
+                    padding: 0;
+                    
+                }
+            }
     } 
 
 }
