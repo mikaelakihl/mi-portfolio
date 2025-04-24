@@ -8,7 +8,9 @@ if (projects) {
     projects.innerHTML = project
     .map(p => `
       <div class="project-wrapper">
-        <img src="${p.img?.src}" width="${p.img?.width}" height="${p.img?.height}">
+        <div class="project-img-wrapper">
+          <img src="${p.img?.src}" width="${p.img?.width}" height="${p.img?.height}">
+        </div>
         <h3>${p.title}</h3>
         <p>${p.description}</p>
         <ul class="colorful-list project-list">
