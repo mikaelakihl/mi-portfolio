@@ -36,7 +36,9 @@ img{
 }
 
 .colorful-list li {
-    padding: 0.2rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 
     &:nth-child(4n+1) { background: #ffdddd; }
     &:nth-child(4n+2) { background: #ddffdd; }
