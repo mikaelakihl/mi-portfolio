@@ -27,7 +27,7 @@ const project: IProject[] = [
         description: `This project was developed as a school project at Medieinstitutet.
         The aim was to create a webshop for donuts or another product of choice. I chose to create a webshop for Canvases I've created in photoshop a few years ago to make it a little bit more personal.
         Troughtout this project I focused on understanding the basics of Java Script and I'm excited to redo this projects in a few years. This is my first project so I consider it to be the most important one. I hope you enjoy.`,
-        tech: ['HTML', 'Javascript', 'Scss', 'Prettier'],
+        tech: ['HTML', 'CSS', 'Javascript', 'Sass', 'Prettier'],
         demo: 'https://github.com/mikaelakihl/mi-js-intro-assignment1-webshop',
         github: 'https://github.com/mikaelakihl/mi-js-intro-assignment1-webshop',
         created_at: ""
@@ -44,7 +44,7 @@ const project: IProject[] = [
         description: `This project was developed as a school group-project at Medieinstitutet.
         The aim was to create a quiz in theme of choice. We chose to create a quiz about cartoons because it felt fun to play with happy colors.
         Troughout this project we focused on learning how to work as a group, both individually and pair coding. I hope you enjoy.`,
-        tech: ['HTML', 'Javascript', 'Typescript', 'Scss', 'Prettier', 'EsLint', 'Vite'],
+        tech: ['HTML', 'CSS', 'Javascript', 'Typescript', 'Sass', 'Prettier', 'EsLint', 'Vite'],
         demo: 'https://github.com/mikaelakihl/mi-js-intro-assignment2-cartoonquiz',
         github: 'https://github.com/mikaelakihl/mi-js-intro-assignment2-cartoonquiz',
         created_at: ""
@@ -60,7 +60,7 @@ const project: IProject[] = [
         },
         description: `This project was developed as a school project at Medieinstitutet.
         We were given a pre-made design to replicate using HTML and CSS for the first time.`,
-        tech: ['HTML', 'CSS', 'Scss'],
+        tech: ['HTML', 'CSS', 'Sass'],
         demo: 'https://github.com/mikaelakihl/mi-html-css-assignment2-toughcookie',
         github: 'https://github.com/mikaelakihl/mi-html-css-assignment2-toughcookie',
         created_at: ""
@@ -76,7 +76,7 @@ const project: IProject[] = [
         },
         description: `Welcome to a "Design-Swap", an assignment we did while studying the Front End Developer Program at Mediainstitutet. 
         In this project we got handed a desing from another group and coded the website acording to their vision. `,
-        tech: ['HTML', 'CSS', 'Javascript', 'Typescript', 'Scss', 'Prettier', 'EsLint', 'Vite', 'Vue','Node.js', 'Pnpm'],
+        tech: ['HTML', 'CSS', 'Javascript', 'Typescript', 'Sass', 'Prettier', 'EsLint', 'Vite', 'Vue','Node.js', 'Pnpm'],
         demo: 'https://github.com/mikaelakihl/mi-graphic-tools-assignment2-jurassic-world',
         github: 'https://github.com/mikaelakihl/mi-graphic-tools-assignment2-jurassic-world',
         created_at: ""
@@ -92,7 +92,7 @@ const project: IProject[] = [
         },
         description: `Welcome to the other project of the "Design-Swap", an assignment we did while studying the Front End Developer Program at Mediainstitutet. 
         In this project we handed over this design and another group code the website acording to our vision. `,
-        tech: ['HTML', 'CSS', 'Javascript', 'Typescript', 'Scss', 'Prettier', 'EsLint', 'Vite', 'Vue','Node.js', 'Npm'],
+        tech: ['HTML', 'CSS', 'Javascript', 'Typescript', 'Sass', 'Prettier', 'EsLint', 'Vite', 'Vue','Node.js', 'Npm'],
         demo: 'https://github.com/mikaelakihl/mi-graphic-tools-assignment1-reptilicious',
         github: 'https://github.com/mikaelakihl/mi-graphic-tools-assignment1-reptilicious',
         created_at: ""
