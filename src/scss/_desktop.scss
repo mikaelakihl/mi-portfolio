@@ -1,1 +1,27 @@
 @use 'variables';
+
+@media (min-width: 1280px) {
+
+    .hero-content{
+        
+        .hero-background{
+            
+            margin-left: 10rem;
+            margin-right: 10rem;
+            }
+            
+
+    }
+
+    .project-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+            
+           
+        
+
+    }
+
+
+}

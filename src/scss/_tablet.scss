@@ -1,1 +1,43 @@
 @use 'variables';
+@use 'mixins';
+
+@media (min-width: 768px) {
+
+    .hero-content{
+        .hero-background{
+            padding: 5rem;
+        }
+    }
+
+    .tech-container{
+    
+        ul{
+          
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+         }
+    }
+
+    .skills-container{
+
+        h3{
+            font-size: 1.5rem;
+        }
+    
+        .skills-wrapper{
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            
+        }
+
+        .skill-box{
+            min-height: 200px;
+        }
+    }
+
+   
+
+
+}
