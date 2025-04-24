@@ -1,8 +1,13 @@
 @use 'variables';
+@use 'mixins';
 
 body{
     margin: 1rem;
     background-color: variables.$background-color;
+}
+
+h2{
+    @include mixins.h2-style;
 }
 
 .hero{ 
