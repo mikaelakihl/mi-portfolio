@@ -65,6 +65,38 @@ const project: IProject[] = [
         github: 'https://github.com/mikaelakihl/mi-html-css-assignment2-toughcookie',
         created_at: ""
     },
+    {
+        id: 4,
+        title: 'Jurassic World - Rebirth',
+        img: {
+            src: '/assets/jurassic-world-portfolio.png',
+            alt: 'jurassic world',
+            width: 1848,
+            height: 1000
+        },
+        description: `Welcome to a "Design-Swap", an assignment we did while studying the Front End Developer Program at Mediainstitutet. 
+        In this project we got handed a desing from another group and coded the website acording to their vision. `,
+        tech: ['HTML', 'CSS', 'Javascript', 'Typescript', 'Scss', 'Prettier', 'EsLint', 'Vite', 'Vue','Node.js', 'Pnpm'],
+        demo: 'https://github.com/mikaelakihl/mi-graphic-tools-assignment2-jurassic-world',
+        github: 'https://github.com/mikaelakihl/mi-graphic-tools-assignment2-jurassic-world',
+        created_at: ""
+    },
+    {
+        id: 5,
+        title: 'Reptilicious',
+        img: {
+            src: '/assets/reptilicious-portfolio.png',
+            alt: 'reptilicious',
+            width: 1833,
+            height: 1003
+        },
+        description: `Welcome to the other project of the "Design-Swap", an assignment we did while studying the Front End Developer Program at Mediainstitutet. 
+        In this project we handed over this design and another group code the website acording to our vision. `,
+        tech: ['HTML', 'CSS', 'Javascript', 'Typescript', 'Scss', 'Prettier', 'EsLint', 'Vite', 'Vue','Node.js', 'Npm'],
+        demo: 'https://github.com/mikaelakihl/mi-graphic-tools-assignment1-reptilicious',
+        github: 'https://github.com/mikaelakihl/mi-graphic-tools-assignment1-reptilicious',
+        created_at: ""
+    },
 
 ];
 
