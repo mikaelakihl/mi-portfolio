@@ -1,1 +1,5 @@
 @use 'variables';
+body{
+    margin: 1rem;
+    background-color: variables.$background-color;
+}
