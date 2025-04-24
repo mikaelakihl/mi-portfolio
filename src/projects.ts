@@ -49,6 +49,22 @@ const project: IProject[] = [
         github: 'https://github.com/mikaelakihl/mi-js-intro-assignment2-cartoonquiz',
         created_at: ""
     },
+    {
+        id: 3,
+        title: 'Tough Cookies',
+        img: {
+            src: '/assets/tough-cookies-portfolio.png',
+            alt: 'tough cookies',
+            width: 1991,
+            height: 1113
+        },
+        description: `This project was developed as a school project at Medieinstitutet.
+        We were given a pre-made design to replicate using HTML and CSS for the first time.`,
+        tech: ['HTML', 'CSS', 'Scss'],
+        demo: 'https://github.com/mikaelakihl/mi-html-css-assignment2-toughcookie',
+        github: 'https://github.com/mikaelakihl/mi-html-css-assignment2-toughcookie',
+        created_at: ""
+    },
 
 ];
 
