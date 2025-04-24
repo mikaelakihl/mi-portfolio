@@ -1,3 +1,5 @@
+// main.ts eller main.js
+import './style.scss';
 import project from "./projects";
 
 const projects = document.querySelector('#projectContainer');
