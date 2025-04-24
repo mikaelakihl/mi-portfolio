@@ -85,7 +85,7 @@ const project: IProject[] = [
         id: 5,
         title: 'Reptilicious',
         img: {
-            src: '/assets/reptilicious-portfolio.png',
+            src: '/assets/reptilicous-portfolio.png',
             alt: 'reptilicious',
             width: 1833,
             height: 1003
