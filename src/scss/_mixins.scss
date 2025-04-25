@@ -4,13 +4,22 @@
     font-size: 3rem;
     text-align: center;
     color: variables.$fourth-color;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    
+    
     // padding-top: 1rem;
 
  }
 
  @mixin h3-style {
     font-size: 2rem;
-    color: black;
+    color: variables.$fourth-color;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
     // padding-top: 1rem;
 
  }
