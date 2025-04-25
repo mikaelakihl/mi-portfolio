@@ -40,8 +40,8 @@ if (projects) {
         
         </ul>
         <div class="project-links">
-          <a class="project-link" href="${p.demo}">View Demo</a>
-          <a class="project-link" href="${p.github}">View on Github</a>
+          <a target="_blank" class="project-link" href="${p.demo}">View Demo</a>
+          <a target="_blank" class="project-link" href="${p.github}">View on Github</a>
         </div>
        </div>
       `)
