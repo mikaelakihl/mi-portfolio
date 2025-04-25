@@ -19,6 +19,8 @@ h1{
 
 h2{
     @include mixins.h2-style;
+    margin-top: 0;
+    padding-top: 2rem;
 }
 
 h3{
@@ -46,6 +48,14 @@ img{
     height: auto;
     display: block;
 }
+
+header{
+    section{
+        margin-bottom:2rem;
+    }
+    margin-bottom: 5rem;
+}
+
 
 .color-from-icon-html{background-color: variables.$color-html;}
 .color-from-icon-css{background-color: variables.$color-css;}
@@ -220,6 +230,7 @@ img{
 
     background-color: white;
     padding: 1rem;
+    margin-bottom: 0;
 
     .project-wrapper{
         margin-bottom: 8rem;
@@ -289,7 +300,7 @@ footer{
     height: 100%;
     width: 100%;
     background-color: variables.$white-color;
-    padding: 1rem;
+    padding-bottom: 1rem;
 
     .footer-container{
         height: 100%;
