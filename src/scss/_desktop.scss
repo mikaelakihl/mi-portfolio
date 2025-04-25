@@ -1,8 +1,26 @@
 @use 'variables';
+@use 'mixins';
 
 @media (min-width: 1280px) {
+
     h2{
         margin-bottom: 4rem;
+    }
+
+    .nav-bar {
+        overflow: visible;
+     
+    
+      ul {
+        white-space: normal;
+        flex-wrap: wrap;
+        
+      }
+
+      .nav-link{
+        font-size: 2rem;
+      }
+
     }
 
     .hero-content{
@@ -25,6 +43,5 @@
         
 
     }
-
 
 }
