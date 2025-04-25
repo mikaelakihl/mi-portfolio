@@ -8,6 +8,13 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+h1{
+    color: variables.$fifth-color;
+     text-shadow: 
+     0 0 1px variables.$fourth-color,
+     0 0 2px variables.$fourth-color,
+     0 0 4px variables.$fourth-color;
+     
 }
 
 h2{
