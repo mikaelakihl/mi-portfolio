@@ -1,3 +1,9 @@
+import gottfridCanvasImg from '../assets/gottfrids-canvas-shop-portfolio.png';
+import cartoonQuizImg from '../assets/cartoon-quiz-portfolio.png';
+import toughCookiesImg from '../assets/tough-cookies-portfolio.png';
+import jurassicWorldImg from '../assets/jurassic-world-portfolio.png';
+import reptiliciousImg from '../assets/reptilicous-portfolio.png';
+
 interface IProject {
     id: number;
     title: string;
@@ -19,7 +25,7 @@ const project: IProject[] = [
         id: 0,
         title: 'Gottfrids canvas shop',
         img: {
-            src: '/assets/gottfrids-canvas-shop-portfolio.png',
+            src: gottfridCanvasImg,
             alt: 'quiz',
             width: 1466,
             height: 817
@@ -36,7 +42,7 @@ const project: IProject[] = [
         id: 1,
         title: 'Cartoon quiz',
         img: {
-            src: '/assets/cartoon-quiz-portfolio.png',
+            src: cartoonQuizImg,
             alt: 'quiz',
             width: 1718,
             height: 1000
@@ -53,7 +59,7 @@ const project: IProject[] = [
         id: 3,
         title: 'Tough Cookies',
         img: {
-            src: '/assets/tough-cookies-portfolio.png',
+            src: toughCookiesImg,
             alt: 'tough cookies',
             width: 1991,
             height: 1113
@@ -69,7 +75,7 @@ const project: IProject[] = [
         id: 4,
         title: 'Jurassic World - Rebirth',
         img: {
-            src: '/assets/jurassic-world-portfolio.png',
+            src: jurassicWorldImg,
             alt: 'jurassic world',
             width: 1848,
             height: 1000
@@ -85,7 +91,7 @@ const project: IProject[] = [
         id: 5,
         title: 'Reptilicious',
         img: {
-            src: '/assets/reptilicous-portfolio.png',
+            src: reptiliciousImg,
             alt: 'reptilicious',
             width: 1833,
             height: 1003
