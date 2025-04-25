@@ -151,6 +151,10 @@ img{
     background-color: variables.$third-color;
     padding: 1rem;
 
+    h2{
+        color: #F1E9E6;
+    }
+
     ul{
         display: flex;
         justify-content: center;
@@ -188,6 +192,7 @@ img{
             
             .project-link{
                 border: solid variables.$fourth-color 3px;
+                background-color: variables.$sixth-color;
                 padding: 0;
                 display: block;
                 width: fit-content;
@@ -205,6 +210,10 @@ img{
 }
 
 .skills-container{
+
+    h2{
+        color: #F1E9E6;
+    }
     
     .skills-wrapper{
         display: flex;
@@ -213,7 +222,7 @@ img{
         text-align: center;
 
         .skills-h3{
-            background-color: variables.$fifth-color;
+            background-color: variables.$sixth-color;
             padding: 0.3rem;
             padding-left: 0.5rem;
             padding-right: 0.5rem;
