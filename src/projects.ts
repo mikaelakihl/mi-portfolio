@@ -36,7 +36,7 @@ const project: IProject[] = [
         id: 1,
         title: 'Cartoon quiz',
         img: {
-            src: '/assets/cartoon-quiz-portfolio.png',
+            src: './assets/cartoon-quiz-portfolio.png',
             alt: 'quiz',
             width: 1718,
             height: 1000
@@ -53,7 +53,7 @@ const project: IProject[] = [
         id: 3,
         title: 'Tough Cookies',
         img: {
-            src: '/assets/tough-cookies-portfolio.png',
+            src: './assets/tough-cookies-portfolio.png',
             alt: 'tough cookies',
             width: 1991,
             height: 1113
@@ -69,7 +69,7 @@ const project: IProject[] = [
         id: 4,
         title: 'Jurassic World - Rebirth',
         img: {
-            src: '/assets/jurassic-world-portfolio.png',
+            src: './assets/jurassic-world-portfolio.png',
             alt: 'jurassic world',
             width: 1848,
             height: 1000
@@ -85,7 +85,7 @@ const project: IProject[] = [
         id: 5,
         title: 'Reptilicious',
         img: {
-            src: '/assets/reptilicous-portfolio.png',
+            src: './assets/reptilicous-portfolio.png',
             alt: 'reptilicious',
             width: 1833,
             height: 1003
