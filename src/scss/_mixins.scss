@@ -3,8 +3,8 @@
 @mixin h2-style {
     font-size: 3rem;
     text-align: center;
-    color: variables.$fourth-color;
-    font-family: "Cherry Bomb One", system-ui;
+    color: variables.$background-color;
+    font-family: variables.$big-font;;
     font-weight: 400;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
  @mixin h3-style {
     font-size: 2rem;
-    color: variables.$fourth-color;
-    font-family: "Calistoga", serif;
+    color: variables.$background-color;
+    font-family: variables.$small-font;
     font-weight: 400;
     font-style: normal;
     // padding-top: 1rem;
