@@ -19,7 +19,7 @@ const project: IProject[] = [
         id: 0,
         title: 'Gottfrids canvas shop',
         img: {
-            src: '/assets/gottfrids-canvas-shop-portfolio.png',
+            src: './assets/gottfrids-canvas-shop-portfolio.png',
             alt: 'quiz',
             width: 1466,
             height: 817
