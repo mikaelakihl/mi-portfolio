@@ -38,6 +38,7 @@ ul{
 a{
     text-decoration: none;
     color: black;
+    @include mixins.hover-black-bg;
 }
 
 img{
