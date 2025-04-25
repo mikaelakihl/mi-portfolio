@@ -2,13 +2,26 @@
 @use 'mixins';
 
 body{
-    margin: 1rem;
+    margin: 0;
     background-color: variables.$background-color;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-family: variables.$primary-font;
+}
+
+h1{
+    color: variables.$little-things;
+    font-family: variables.$small-font;
+    //  text-shadow: 
+    //  0 0 1px variables.$fourth-color,
+    //  0 0 2px variables.$fourth-color,
+    //  0 0 4px variables.$fourth-color;
+     
 }
 
 h2{
     @include mixins.h2-style;
+    margin-top: 0;
+    padding-top: 2rem;
 }
 
 h3{
@@ -28,6 +41,7 @@ ul{
 a{
     text-decoration: none;
     color: black;
+    @include mixins.hover-black-bg;
 }
 
 img{
@@ -36,15 +50,84 @@ img{
     display: block;
 }
 
+header{
+    section{
+        margin-bottom:2rem;
+    }
+    margin-bottom: 5rem;
+}
+
+
+.color-from-icon-html{background-color: variables.$color-html;}
+.color-from-icon-css{background-color: variables.$color-css;}
+.color-from-icon-js{background-color: variables.$color-js;}
+.color-from-icon-node{background-color: variables.$color-node;}
+.color-from-icon-api{background-color: variables.$color-api;}
+.color-from-icon-pairprogramming{background-color: variables.$color-pair-programming;}
+.color-from-icon-github{ background-color: variables.$color-github;}
+.color-from-icon-ts{background-color: variables.$color-ts;}
+.color-from-icon-sass{background-color: variables.$color-sass;}
+.color-from-icon-prettier{background-color: variables.$color-prettier;}
+.color-from-icon-eslint{background-color: variables.$color-eslint;}
+.color-from-icon-vite{background-color: variables.$color-vite;}
+.color-from-icon-vue{background-color: variables.$color-vue;}
+.color-from-icon-pnpm{background-color: variables.$color-pnpm;}
+.color-from-icon-npm{background-color: variables.$color-npm;}
+
+
 .colorful-list li {
     padding: 0.3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    color: variables.$white-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 
-    &:nth-child(4n+1) { background: #ffdddd; }
-    &:nth-child(4n+2) { background: #ddffdd; }
-    &:nth-child(4n+3) { background: #ddddff; }
-    &:nth-child(4n+4) { background: #ffffdd; }
+.nav-bar{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; // för smooth swipe på iOS
+    scrollbar-width: none; // Firefox
+    -ms-overflow-style: none; // IE/Edge
+    padding: 1rem 0;
+    
+    
+
+    .nav-bar::-webkit-scrollbar{
+        display: none;
+
+    }
+
+    ul{
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        padding: 0 1rem;
+        margin: 0;
+        white-space: nowrap;
+        justify-content: space-evenly;
+        
+        li{
+            
+            a {
+                display: inline-block;
+                padding: 0.5rem 1.25rem;
+                border-radius: 2rem;
+                text-decoration: none;
+                color: variables.$color-block-nav;
+                transition: background-color 0.3s;
+                font-family: variables.$small-font;
+                font-size: 1.5rem;
+                text-shadow: 
+                0 0 1px variables.$background-color,
+                0 0 2px variables.$background-color,
+                0 0 4px variables.$background-color;
+                
+            }
+        }
+
+
+    }
 }
 
 .hero{ 
@@ -60,6 +143,11 @@ img{
         display: block;
         z-index: 0;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero-img{
+        -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     }
 }
 
@@ -87,6 +175,7 @@ img{
                 border-radius: 50%;
                 width: 200px;
                 height: 200px;
+                border: solid 3px #24564a33;
             }
 
             h1{
@@ -112,6 +201,10 @@ img{
                     justify-content: center;
                     text-decoration: none;
                     padding: 0;
+
+                    a{
+                        display: flex;
+                    }
                     
                 }
             }
@@ -120,8 +213,13 @@ img{
 }
 
 .tech-container{
-    background-color: variables.$third-color;
+    background-color: variables.$color-block-nav;
     padding: 1rem;
+    // border-radius:  15px 15px 0px 0px;
+
+    h2{
+        color: #24564a;
+    }
 
     ul{
         display: flex;
@@ -136,12 +234,15 @@ img{
 
     background-color: white;
     padding: 1rem;
+    margin-bottom: 0;
 
     .project-wrapper{
         margin-bottom: 8rem;
 
         img{
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-bottom: auto;
+            aspect-ratio: 16 / 10;
         }
     
         .project-list{
@@ -157,7 +258,8 @@ img{
             padding-top: 1rem;
             
             .project-link{
-                border: solid variables.$fourth-color 3px;
+                // border: solid variables.$background-color 3px;
+                background-color: variables.$color-block-nav;
                 padding: 0;
                 display: block;
                 width: fit-content;
@@ -165,16 +267,26 @@ img{
                 padding: 0.5rem;
                 border-radius: 1.2rem;
                 text-transform: uppercase;
+                color: variables.$background-color;
+                font-family: variables.$small-font;
+                box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+                position: relative;
+                top: 0;
+                
             }
         }
     }
 
 
-
-
 }
 
 .skills-container{
+    background-color: variables.$color-block-nav;
+    padding-bottom: 4rem;
+
+    h2{
+        color: variables.$background-color;
+    }
     
     .skills-wrapper{
         display: flex;
@@ -183,12 +295,13 @@ img{
         text-align: center;
 
         .skills-h3{
-            background-color: variables.$fifth-color;
+            background-color: variables.$background-color;
             padding: 0.3rem;
             padding-left: 0.5rem;
             padding-right: 0.5rem;
-            color: variables.$white-color;
+            color: variables.$color-block-nav;
         }
+
         
     }
 }
@@ -198,7 +311,7 @@ footer{
     height: 100%;
     width: 100%;
     background-color: variables.$white-color;
-    padding: 1rem;
+    padding-bottom: 1rem;
 
     .footer-container{
         height: 100%;
@@ -221,6 +334,7 @@ footer{
             height: 200px;
             object-fit: cover;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border: solid 3px #24564a33;
         }
 
         .contact-container{
@@ -235,7 +349,7 @@ footer{
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            padding: 0;
+            // padding: 0;
             gap: 1rem;
         }
 

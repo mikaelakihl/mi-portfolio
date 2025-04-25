@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Cherry+Bomb+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MK -Portfolio</title>
   </head>
   <body>
     <header>
       <section class="hero">
-        <img src="assets/hero-img-portfolio.png" alt="hero image"/>
+        <img class="hero-img" src="assets/hero-img-portfolio.jpg" alt="hero image"/>
         <div class="hero-content">
             <div class="hero-background">
               <div class="profile-picture-container">
                 <img class="profile-picture" src="assets/mikaelakihl-profilepicture-portfolio.jpg" alt="profilepicture"/>
               </div>
-              <h1>Mikaela Kihl</h1>
+              <h1 id="profileSection">Mikaela Kihl</h1>
               <h4>Frontend developer</h4>
               <p class="hero-profile-text">I’m a front-end development student at Medieinstitutet, currently learning the foundations of web development with a focus on design, structure, and interactivity.
 
@@ -25,14 +28,61 @@
               <nav>
                 <ul>
                   <li>
-                    <a href="https://www.linkedin.com/in/mikaelakihl/">
+                    <a target="_blank" href="https://www.linkedin.com/in/mikaelakihl/">
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
                         <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
                     </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/mikaelakihl">
+                    <a href="assets/cv-mikaela-kihl-2025.pdf" target="_blank" class="cv-icon">
+                      <svg width="30" height="30" viewBox="0 0 88 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_78_4)">
+                        <rect width="88" height="105" fill="white"/>
+                        <g filter="url(#filter0_d_78_4)">
+                        <path d="M1 0H88V105H1V0Z" fill="black"/>
+                        </g>
+                        <g filter="url(#filter1_d_78_4)">
+                        <path d="M88 0V105H1V0H88ZM2 104H87V1H2V104Z" fill="black"/>
+                        </g>
+                        <path d="M81 10V11H44V10H81Z" fill="white"/>
+                        <path d="M81 16V17H44V16H81Z" fill="white"/>
+                        <path d="M81 22V23H44V22H81Z" fill="white"/>
+                        <path d="M81 28V29H44V28H81Z" fill="white"/>
+                        <path d="M81 97V98H7V97H81ZM81 91V92H7V91H81ZM81 85V86H7V85H81ZM81 78V79H7V78H81ZM81 72V73H7V72H81ZM81 66V67H7V66H81ZM81 60V61H7V60H81ZM81 54V55H7V54H81ZM81 48V49H7V48H81ZM81 42V43H7V42H81ZM81 35V36H7V35H81Z" fill="white"/>
+                        <path d="M40.4219 11.052L34.9059 28.748H28.7459L23.5099 11.052H28.5219C28.8206 11.9853 29.1379 13.0493 29.4739 14.244C29.8099 15.4387 30.1366 16.6613 30.4539 17.912C30.7899 19.144 31.0793 20.3013 31.3219 21.384C31.5833 22.448 31.7793 23.3347 31.9099 24.044H32.0219C32.1526 23.3347 32.3393 22.448 32.5819 21.384C32.8433 20.3013 33.1326 19.144 33.4499 17.912C33.7859 16.68 34.1219 15.4667 34.4579 14.272C34.7939 13.0773 35.1113 12.004 35.4099 11.052H40.4219Z" fill="white"/>
+                        <path d="M21.896 24.912V28.44C21 28.6267 20.1227 28.7667 19.264 28.86C18.4053 28.9533 17.388 29 16.212 29C14.7 29 13.4213 28.8693 12.376 28.608C11.3493 28.3467 10.5187 27.8893 9.884 27.236C9.268 26.564 8.82 25.6213 8.54 24.408C8.26 23.1947 8.12 21.636 8.12 19.732C8.12 17.9027 8.26 16.4 8.54 15.224C8.82 14.048 9.268 13.1427 9.884 12.508C10.5187 11.8547 11.3493 11.4067 12.376 11.164C13.4213 10.9027 14.7 10.772 16.212 10.772C17.388 10.772 18.4053 10.8187 19.264 10.912C20.1227 10.9867 21 11.1267 21.896 11.332V14.972L21.812 15.028C21.028 14.8413 20.272 14.7107 19.544 14.636C18.816 14.5427 17.92 14.496 16.856 14.496C15.9973 14.496 15.288 14.5613 14.728 14.692C14.1867 14.804 13.7573 15.0373 13.44 15.392C13.1227 15.7467 12.8987 16.2693 12.768 16.96C12.656 17.6507 12.6 18.5747 12.6 19.732C12.6 20.9453 12.656 21.9253 12.768 22.672C12.8987 23.4 13.1227 23.9507 13.44 24.324C13.7573 24.6973 14.1867 24.9493 14.728 25.08C15.288 25.2107 15.9973 25.276 16.856 25.276C17.9013 25.276 18.788 25.248 19.516 25.192C20.2627 25.1173 21.0093 24.9867 21.756 24.8L21.896 24.912Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_78_4" x="-3" y="0" width="95" height="113" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_78_4"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_78_4" result="shape"/>
+                        </filter>
+                        <filter id="filter1_d_78_4" x="-3" y="0" width="95" height="113" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_78_4"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_78_4" result="shape"/>
+                        </filter>
+                        <clipPath id="clip0_78_4">
+                        <rect width="88" height="105" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mikaelakihl" target="_blank">
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
                         <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
                     </svg>
@@ -43,27 +93,46 @@
           </div>
         </div>
       </section>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="#profileSection"  class="nav-link">Profile</a>
+          </li>
+          <li>
+            <a href="#techSection" class="nav-link">Tech</a>
+          </li>
+          <li>
+            <a href="#projectSection" class="nav-link">Featured Projects</a>
+          </li>
+          <li>
+            <a href="#skillSection" class="nav-link">Skills</a>
+          </li>
+          <li>
+            <a href="#contactSection"  class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="tech-container">
-        <h2>Tech</h2>
+        <h2 id="techSection">Tech</h2>
         <ul class="colorful-list">
-          <li>Html</li>
-          <li>CSS</li>
-          <li>Flexbox</li>
-          <li>JavaScript</li>
-          <li>Node.js</li>
-          <li>API:s</li>
-          <li>Pair-programming</li>
-          <li>github</li>
+          <li class="color-from-icon-html">Html</li>
+          <li class="color-from-icon-css">CSS</li>
+          <li class="color-from-icon-css">Flexbox</li>
+          <li class="color-from-icon-js">JavaScript</li>
+          <li class="color-from-icon-node">Node.js</li>
+          <li class="color-from-icon-api">API:s</li>
+          <li class="color-from-icon-pairprogramming">Pair-programming</li>
+          <li class="color-from-icon-github">Github</li>
         </ul>
       </div>
-      <section class="project-section">
+      <section id="projectSection" class="project-section">
         <h2>Featured Projects</h2>
         <div class="project-container" id="projectContainer"></div>
       </section>
       <div class="skills-container">
-        <h2>Skills</h2>
+        <h2 id="skillSection">Skills</h2>
         <div class="skills-wrapper">
             <div class="skill-box">
               <h3 class="skills-h3">Code</h3>
@@ -101,7 +170,7 @@
     </main>
     <footer>
       <div class="footer-container">
-        <h2>Get in touch!</h2>
+        <h2 id="contactSection">Get in touch!</h2>
         <div class="profile-picture-container">
           <img class="profile-picture" src="assets/mikaelakihl-profilepicture-portfolio.jpg" alt="profilepicture"/>
         </div>
@@ -112,14 +181,61 @@
             <a href="mailto:mikaela.kihl@outlook.com">mikaela.kihl@outlook.com</a>
           </div>
         <div class="contact-social-media-container">
-          <a href="https://www.linkedin.com/in/mikaelakihl/">
+          <a target="_blank" href="https://www.linkedin.com/in/mikaelakihl/">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
               <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
-          </svg>
-          <a href="https://github.com/mikaelakihl">
+            </svg>
+          </a>
+          <a target="_blank" href="">
+            <svg width="30" height="30" viewBox="0 0 88 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_78_4)">
+              <rect width="88" height="105" fill="white"/>
+              <g filter="url(#filter0_d_78_4)">
+              <path d="M1 0H88V105H1V0Z" fill="black"/>
+              </g>
+              <g filter="url(#filter1_d_78_4)">
+              <path d="M88 0V105H1V0H88ZM2 104H87V1H2V104Z" fill="black"/>
+              </g>
+              <path d="M81 10V11H44V10H81Z" fill="white"/>
+              <path d="M81 16V17H44V16H81Z" fill="white"/>
+              <path d="M81 22V23H44V22H81Z" fill="white"/>
+              <path d="M81 28V29H44V28H81Z" fill="white"/>
+              <path d="M81 97V98H7V97H81ZM81 91V92H7V91H81ZM81 85V86H7V85H81ZM81 78V79H7V78H81ZM81 72V73H7V72H81ZM81 66V67H7V66H81ZM81 60V61H7V60H81ZM81 54V55H7V54H81ZM81 48V49H7V48H81ZM81 42V43H7V42H81ZM81 35V36H7V35H81Z" fill="white"/>
+              <path d="M40.4219 11.052L34.9059 28.748H28.7459L23.5099 11.052H28.5219C28.8206 11.9853 29.1379 13.0493 29.4739 14.244C29.8099 15.4387 30.1366 16.6613 30.4539 17.912C30.7899 19.144 31.0793 20.3013 31.3219 21.384C31.5833 22.448 31.7793 23.3347 31.9099 24.044H32.0219C32.1526 23.3347 32.3393 22.448 32.5819 21.384C32.8433 20.3013 33.1326 19.144 33.4499 17.912C33.7859 16.68 34.1219 15.4667 34.4579 14.272C34.7939 13.0773 35.1113 12.004 35.4099 11.052H40.4219Z" fill="white"/>
+              <path d="M21.896 24.912V28.44C21 28.6267 20.1227 28.7667 19.264 28.86C18.4053 28.9533 17.388 29 16.212 29C14.7 29 13.4213 28.8693 12.376 28.608C11.3493 28.3467 10.5187 27.8893 9.884 27.236C9.268 26.564 8.82 25.6213 8.54 24.408C8.26 23.1947 8.12 21.636 8.12 19.732C8.12 17.9027 8.26 16.4 8.54 15.224C8.82 14.048 9.268 13.1427 9.884 12.508C10.5187 11.8547 11.3493 11.4067 12.376 11.164C13.4213 10.9027 14.7 10.772 16.212 10.772C17.388 10.772 18.4053 10.8187 19.264 10.912C20.1227 10.9867 21 11.1267 21.896 11.332V14.972L21.812 15.028C21.028 14.8413 20.272 14.7107 19.544 14.636C18.816 14.5427 17.92 14.496 16.856 14.496C15.9973 14.496 15.288 14.5613 14.728 14.692C14.1867 14.804 13.7573 15.0373 13.44 15.392C13.1227 15.7467 12.8987 16.2693 12.768 16.96C12.656 17.6507 12.6 18.5747 12.6 19.732C12.6 20.9453 12.656 21.9253 12.768 22.672C12.8987 23.4 13.1227 23.9507 13.44 24.324C13.7573 24.6973 14.1867 24.9493 14.728 25.08C15.288 25.2107 15.9973 25.276 16.856 25.276C17.9013 25.276 18.788 25.248 19.516 25.192C20.2627 25.1173 21.0093 24.9867 21.756 24.8L21.896 24.912Z" fill="white"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_78_4" x="-3" y="0" width="95" height="113" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_78_4"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_78_4" result="shape"/>
+              </filter>
+              <filter id="filter1_d_78_4" x="-3" y="0" width="95" height="113" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_78_4"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_78_4" result="shape"/>
+              </filter>
+              <clipPath id="clip0_78_4">
+              <rect width="88" height="105" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </a>
+          <a target="_blank" href="https://github.com/mikaelakihl">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
               <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
-          </svg>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
