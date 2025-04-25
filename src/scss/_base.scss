@@ -36,15 +36,31 @@ img{
     display: block;
 }
 
+.color-from-icon-html{background-color: variables.$color-html;}
+.color-from-icon-css{background-color: variables.$color-css;}
+.color-from-icon-js{background-color: variables.$color-js;}
+.color-from-icon-node{background-color: variables.$color-node;}
+.color-from-icon-api{background-color: variables.$color-api;}
+.color-from-icon-pairprogramming{background-color: variables.$color-pair-programming;}
+.color-from-icon-github{ background-color: variables.$color-github;}
+.color-from-icon-ts{background-color: variables.$color-ts;}
+.color-from-icon-sass{background-color: variables.$color-sass;}
+.color-from-icon-prettier{background-color: variables.$color-prettier;}
+.color-from-icon-eslint{background-color: variables.$color-eslint;}
+.color-from-icon-vite{background-color: variables.$color-vite;}
+.color-from-icon-vue{background-color: variables.$color-vue;}
+.color-from-icon-pnpm{background-color: variables.$color-pnpm;}
+.color-from-icon-npm{background-color: variables.$color-npm;}
+
+
+
 .colorful-list li {
     padding: 0.3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-
-    &:nth-child(4n+1) { background: #ffdddd; }
-    &:nth-child(4n+2) { background: #ddffdd; }
-    &:nth-child(4n+3) { background: #ddddff; }
-    &:nth-child(4n+4) { background: #ffffdd; }
+    color: variables.$white-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .hero{ 
