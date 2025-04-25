@@ -2,18 +2,19 @@
 @use 'mixins';
 
 body{
-    margin: 1rem;
+    margin: 0;
     background-color: variables.$background-color;
     font-size: 1.2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: variables.$primary-font;
 }
 
 h1{
-    color: variables.$fifth-color;
-     text-shadow: 
-     0 0 1px variables.$fourth-color,
-     0 0 2px variables.$fourth-color,
-     0 0 4px variables.$fourth-color;
+    color: variables.$little-things;
+    font-family: variables.$small-font;
+    //  text-shadow: 
+    //  0 0 1px variables.$fourth-color,
+    //  0 0 2px variables.$fourth-color,
+    //  0 0 4px variables.$fourth-color;
      
 }
 
@@ -72,7 +73,6 @@ header{
 .color-from-icon-vue{background-color: variables.$color-vue;}
 .color-from-icon-pnpm{background-color: variables.$color-pnpm;}
 .color-from-icon-npm{background-color: variables.$color-npm;}
-
 
 
 .colorful-list li {
@@ -210,11 +210,12 @@ header{
 }
 
 .tech-container{
-    background-color: variables.$third-color;
+    background-color: variables.$color-block-nav;
     padding: 1rem;
+    // border-radius:  15px 15px 0px 0px;
 
     h2{
-        color: #F1E9E6;
+        color: #24564a;
     }
 
     ul{
@@ -254,8 +255,8 @@ header{
             padding-top: 1rem;
             
             .project-link{
-                border: solid variables.$fourth-color 3px;
-                background-color: variables.$sixth-color;
+                // border: solid variables.$background-color 3px;
+                background-color: variables.$color-block-nav;
                 padding: 0;
                 display: block;
                 width: fit-content;
@@ -263,19 +264,25 @@ header{
                 padding: 0.5rem;
                 border-radius: 1.2rem;
                 text-transform: uppercase;
+                color: variables.$background-color;
+                font-family: variables.$small-font;
+                box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+                position: relative;
+                top: 0;
+                
             }
         }
     }
 
 
-
-
 }
 
 .skills-container{
+    background-color: variables.$color-block-nav;
+    padding-bottom: 4rem;
 
     h2{
-        color: #F1E9E6;
+        color: variables.$background-color;
     }
     
     .skills-wrapper{
@@ -285,12 +292,13 @@ header{
         text-align: center;
 
         .skills-h3{
-            background-color: variables.$sixth-color;
+            background-color: variables.$background-color;
             padding: 0.3rem;
             padding-left: 0.5rem;
             padding-right: 0.5rem;
-            color: variables.$white-color;
+            color: variables.$color-block-nav;
         }
+
         
     }
 }
