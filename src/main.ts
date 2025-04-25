@@ -41,7 +41,7 @@ if (projects) {
         </ul>
         <div class="project-links">
           <a class="project-link" href="${p.demo}">View Demo</a>
-          <a class="project-link" href="${p.github}">Go to Github</a>
+          <a class="project-link" href="${p.github}">View on Github</a>
         </div>
        </div>
       `)
