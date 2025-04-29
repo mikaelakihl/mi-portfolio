@@ -90,11 +90,16 @@ header{
     scrollbar-width: none; // Firefox
     -ms-overflow-style: none; // IE/Edge
     padding: 1rem 0;
+    position: fixed;
+    background-color: #24564a;
+    width: 100%;
+    top: 0;
     
     
 
     .nav-bar::-webkit-scrollbar{
         display: none;
+        
 
     }
 
@@ -103,7 +108,7 @@ header{
         gap: 1rem;
         list-style: none;
         padding: 0 1rem;
-        margin: 0;
+        margin-bottom: 1rem;
         white-space: nowrap;
         justify-content: space-evenly;
         
@@ -133,8 +138,10 @@ header{
 .hero{ 
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     img{
         height: 100%;
@@ -151,16 +158,31 @@ header{
         // -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%);
         // mask-image: linear-gradient(to bottom, transparent 0%, black 20%);
 
-        -webkit-mask-image: 
-        linear-gradient(to bottom, transparent 0%, black 20%),
-        linear-gradient(to bottom, black 80%, transparent 100%);
-      mask-image: 
-        linear-gradient(to bottom, transparent 0%, black 20%),
-        linear-gradient(to bottom, black 80%, transparent 100%);
+    //     -webkit-mask-image: 
+    //     linear-gradient(to bottom, transparent 0%, black 20%),
+    //     linear-gradient(to bottom, black 80%, transparent 100%);
+    //   mask-image: 
+    //     linear-gradient(to bottom, transparent 0%, black 20%),
+    //     linear-gradient(to bottom, black 80%, transparent 100%);
       
-      -webkit-mask-composite: intersect;
-      mask-composite: intersect;
+    //   -webkit-mask-composite: intersect;
+    //   mask-composite: intersect;
+    // 
+
+    -webkit-mask-image: 
+    linear-gradient(to bottom, transparent 0%, black 20%),
+    linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: 
+    linear-gradient(to bottom, transparent 0%, black 20%),
+    linear-gradient(to bottom, black 80%, transparent 100%);
+
+    -webkit-mask-composite: destination-in; /* Safari kräver "destination-in" */
+    mask-composite: intersect; /* Andra webbläsare */
+
+    mask-repeat: no-repeat;
+    mask-size: cover;
     }
+    
 }
 
 .hero-content{
