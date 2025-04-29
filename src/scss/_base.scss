@@ -4,7 +4,7 @@
 body{
     margin: 0;
     background-color: variables.$background-color;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: variables.$primary-font;
 }
 
@@ -15,7 +15,7 @@ h1{
     //  0 0 1px variables.$fourth-color,
     //  0 0 2px variables.$fourth-color,
     //  0 0 4px variables.$fourth-color;
-     
+     font-size: 1.2rem;
 }
 
 h2{
