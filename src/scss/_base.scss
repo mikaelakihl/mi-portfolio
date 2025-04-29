@@ -91,10 +91,11 @@ header{
     -ms-overflow-style: none; // IE/Edge
     padding: 1rem 0;
     position: fixed;
-    background-color: #24564a;
+    background-color: #24564ad8;
     width: 100%;
     top: 0;
-    
+    z-index: 2;
+
     
 
     .nav-bar::-webkit-scrollbar{
