@@ -11,11 +11,7 @@ body{
 h1{
     color: variables.$little-things;
     font-family: variables.$small-font;
-    //  text-shadow: 
-    //  0 0 1px variables.$fourth-color,
-    //  0 0 2px variables.$fourth-color,
-    //  0 0 4px variables.$fourth-color;
-     font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 h2{
@@ -96,11 +92,9 @@ header{
     top: 0;
     z-index: 2;
 
-    
 
     .nav-bar::-webkit-scrollbar{
         display: none;
-        
 
     }
 
@@ -154,22 +148,7 @@ header{
     }
 
     .hero-img{
-        // -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-        // mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-        // -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%);
-        // mask-image: linear-gradient(to bottom, transparent 0%, black 20%);
-
-    //     -webkit-mask-image: 
-    //     linear-gradient(to bottom, transparent 0%, black 20%),
-    //     linear-gradient(to bottom, black 80%, transparent 100%);
-    //   mask-image: 
-    //     linear-gradient(to bottom, transparent 0%, black 20%),
-    //     linear-gradient(to bottom, black 80%, transparent 100%);
-      
-    //   -webkit-mask-composite: intersect;
-    //   mask-composite: intersect;
-    // 
-
+    
     -webkit-mask-image: 
     linear-gradient(to bottom, transparent 0%, black 20%),
     linear-gradient(to bottom, black 80%, transparent 100%);
@@ -182,6 +161,7 @@ header{
 
     mask-repeat: no-repeat;
     mask-size: cover;
+
     }
     
 }
@@ -250,7 +230,6 @@ header{
 .tech-container{
     background-color: variables.$color-block-nav;
     padding: 1rem;
-    // border-radius:  15px 15px 0px 0px;
 
     h2{
         color: #24564a;
@@ -293,7 +272,6 @@ header{
             padding-top: 1rem;
             
             .project-link{
-                // border: solid variables.$background-color 3px;
                 background-color: variables.$color-block-nav;
                 padding: 0;
                 display: block;
@@ -388,9 +366,6 @@ footer{
             gap: 1rem;
         }
 
-
     }
-
-
 
 }
