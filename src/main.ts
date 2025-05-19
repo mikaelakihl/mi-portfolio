@@ -26,8 +26,10 @@ const techClassMap: Record<string, string> = {
 
 
 if (projects) {
-    projects.innerHTML = project
-    .map(p => `
+  projects.innerHTML = project
+  .slice()
+  .reverse()
+  .map(p => `
       <div class="project-wrapper">
         <div class="project-img-wrapper">
           <img src="${p.img?.src}" width="${p.img?.width}" height="${p.img?.height}">
