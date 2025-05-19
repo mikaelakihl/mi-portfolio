@@ -107,7 +107,7 @@ const project: IProject[] = [
             height: 1053
         },
         description: `In this project We built Book api with MongoDB backend and a Frontend interface Vue. It allows us to browse, review and manage a collection of books. The application also includes user authentication, admin-only access for managing content, and public access for viewing books submitting reviews. `,
-        tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Sass', 'Vite', 'Vue','Node.js', 'Npm'],
+        tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Sass', 'Vite', 'Vue','Node.js', 'Npm', 'Express', 'MongoDB'],
         demo: 'https://mi-api-development-assignment2-the-lumos-library-client.vercel.app/',
         github: 'https://github.com/mikaelakihl/mi-api-development-assignment2-the-lumos-library',
         created_at: ""

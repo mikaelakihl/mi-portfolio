@@ -19,7 +19,9 @@ const techClassMap: Record<string, string> = {
   "Pair programming": "pairprogramming",
   Github: "github",
   Pnpm: "pnpm",
-  Npm: "npm"
+  Npm: "npm",
+  Express: "express",
+  MongoDB: "mongodb"
 };
 
 
